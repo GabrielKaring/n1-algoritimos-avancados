@@ -102,7 +102,7 @@ def display_result(best_weight, best_path):
  
 #  Ponto de entrada
 def main():
-    file_path = sys.argv[1] if len(sys.argv) > 1 else "input/entrada.txt"
+    file_path = sys.argv[1] if len(sys.argv) > 1 else "input/entrada.txt" or "/uploads/entrada.txt"
  
     try:
         n, matrix, origin, destination, max_vertices = read_input_file(file_path)
